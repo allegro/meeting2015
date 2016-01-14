@@ -6,7 +6,7 @@ description: allegro.tech meeting is an annual technology conference organized b
 <section class="section-atm">
     <header>
         <div class="content">
-            <img src="/img/atm8/atm8-logo.png" alt="allegro.tech meeting v8"/>
+            <img src="./img/atm8/atm8-logo.png" alt="allegro.tech meeting v8"/>
 
             <h1>allegro.tech meeting</h1>
             <p class="date">September 14th, 2015</p>
@@ -136,7 +136,7 @@ This two day event is organized in whole by allegro engineers.
 
         <div class="gallery">
         {% for i in (0..98) %}
-             <a href="/img/atm8/photos/full/image{{ i }}.jpg"><img alt="ATM8 - image {{ i }}" src="/img/atm8/photos/thumbs/image{{ i }}.jpg"></a>
+             <a href="./img/atm8/photos/full/image{{ i }}.jpg"><img alt="ATM8 - image {{ i }}" src="./img/atm8/photos/thumbs/image{{ i }}.jpg"></a>
         {% endfor %}
         </div>
 
@@ -145,13 +145,12 @@ This two day event is organized in whole by allegro engineers.
             {% for video in videos%}
                 {%assign videoKey = video[0]%}
                 {%assign videoData = video[1]%}
-              
+
                 <li>
                     <iframe width="427" height="240" src="https://www.youtube.com/embed/{{videoData.youtubeID}}" frameborder="0" allowfullscreen></iframe>
                     <h3>{{videoData.title}}</h3>
                </li>
-            {% endfor %}        
+            {% endfor %}
         </ul>
     </div>
 </section>
-

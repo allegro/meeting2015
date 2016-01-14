@@ -1,8 +1,8 @@
 {%if include.showLinkToPost %}
-<a href="/authors/{{authorKey}}"><img src="/img/authors/{{authorKey}}.jpg" alt="{{authorKey}}"/></a>
+<a href="/authors/{{authorKey}}"><img src="./img/authors/{{authorKey}}.jpg" alt="{{authorKey}}"/></a>
 <h3><a href="/authors/{{authorKey}}">{{authorData.name}}</a></h3>
 {% else %}
-<img src="/img/authors/{{authorKey}}.jpg" alt="{{authorKey}}"/>
+<img src="./img/authors/{{authorKey}}.jpg" alt="{{authorKey}}"/>
 <h3>{{authorData.name}}</h3>
 {% endif %}
 
